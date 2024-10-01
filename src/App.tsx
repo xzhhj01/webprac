@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import My from "./components/My";
+import Login from "./components/Login"
 import { SessionProvider } from "./context/SessionContext";
 import "./App.css";
 
@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   return (
     <SessionProvider>
-      <My></My>
+        <Login></Login>
     </SessionProvider>
   );
 }
