@@ -1,5 +1,5 @@
 // src/components/My.tsx
-import React, { useState } from "react";
+import { useState } from "react";
 import Profile from "./Profile";
 import Login from "./Login";
 import { useSession } from "../context/SessionContext";
@@ -56,8 +56,8 @@ const My: React.FC = () => {
 
   // 값 변경 시 hasDirty 처리
   const handleInputChange = (
-    setter: React.Dispatch<React.SetStateAction<any>>,
-    value: any
+    setter: React.Dispatch<React.SetStateAction<string>>,
+    value: string
   ) => {
     setter(value);
     setHasDirty(true);
